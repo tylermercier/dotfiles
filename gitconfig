@@ -1,0 +1,53 @@
+[user]
+	name = Tyler Mercier
+	email = tylermercier@gmail.com
+[branch]
+	# always setup 'git pull' to rebase instead of merge
+	autosetuprebase = always
+[svn]
+	# push empty directory removals back to svn at directory deletes
+	rmdir = true
+[alias]
+	st = status
+	ct = commit
+	# 'add all' stages all new+changed+deleted files
+	aa = !git ls-files -d | xargs -r git rm && git ls-files -m -o --exclude-standard | xargs -r git add
+	# 'add grep' stages all new+changed that match $1
+	ag = "!sh -c 'git ls-files -m -o --exclude-standard | grep $1 | xargs -r git add' -"
+	# 'checkout grep' checkouts any files that match $1
+	cg = "!sh -c 'git ls-files -m | grep $1 | xargs -r git checkout' -"
+	# 'diff grep' diffs any files that match $1
+	dg = "!sh -c 'git ls-files -m | grep $1 | xargs -r git diff' -"
+	# 'patch grep' diff --cached any files that match $1
+	pg = "!sh -c 'git ls-files -m | grep $1 | xargs -r git diff --cached' -"
+	# 'remove grep' remove any files that match $1
+	rmg = "!sh -c 'git ls-files -d | grep $1 | xargs -r git rm' -"
+	# 'reset grep' reset any files that match $1
+	rsg = "!sh -c 'git ls-files -c --with-tree=HEAD | grep $1 | xargs -r git reset HEAD -- ' -"
+	# nice log output
+	lg = log --graph --pretty=oneline --abbrev-commit --decorate
+	# rerun svn show-ignore -> exclude
+	si = !git svn show-ignore > .git/info/exclude
+	# start git-sh
+	sh = !git-sh
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
+[color "branch"]
+	current = green bold
+	local = green
+	remote = red bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red
+[color "sh"]
+	branch = yellow
