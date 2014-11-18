@@ -1,6 +1,6 @@
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export PATH="/usr/local/bin:$HOME/.rbenv/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/.rbenv/bin:/usr/local/sbin:$PATH"
 
 # Ansi Colors in iTerm2
 export CLICOLOR=1
@@ -21,3 +21,5 @@ fi
 if [ -f ~/.bash_command_prompt ]; then
   . ~/.bash_command_prompt
 fi
+
+export NO_AUTOAUTOLINT=0

@@ -1,8 +1,10 @@
+
 {
+	"atomic_save": false,
 	"bold_folder_labels": false,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/RailsCasts Colour Scheme/RailsCastsColorScheme.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
@@ -21,18 +23,19 @@
 	],
 	"line_padding_bottom": 0.5,
 	"line_padding_top": 0.5,
+	"open_files_in_new_window": false,
 	"rulers":
 	[
 		80,
 		120
 	],
 	"save_on_focus_lost": true,
+	"show_full_path": true,
 	"sublimelinter_mark_style": "underline",
 	"sublimelinter_popup_errors_on_save": true,
 	"tab_size": 2,
 	"theme": "Minimal Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": true,
 	"word_wrap": true
