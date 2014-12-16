@@ -9,7 +9,7 @@ echo "updating submodules for vim"
 git pull && git submodule init && git submodule update && git submodule status
 
 echo "creating symlinks"
-dotfiles=( bash_aliases bash_command_prompt bash_profile bashrc gemrc gitconfig gitignore tmux.conf vimrc vim )
+dotfiles=( bash_aliases bash_profile bashrc gemrc gitconfig gitignore tmux.conf vimrc vim )
 for file in "${dotfiles[@]}"
 do
   path="$(pwd)/$file"
