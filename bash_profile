@@ -4,8 +4,10 @@ export PATH="/usr/local/bin:$HOME/.rbenv/bin:/usr/local/sbin:$PATH"
 
 # Ansi Colors in iTerm2
 export CLICOLOR=1
+
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
+
 # Configure NPM
 export NODE_PATH=/usr/local/lib/node
 
@@ -17,9 +19,5 @@ if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
 
-# Configure command prompt
-if [ -f ~/.bash_command_prompt ]; then
-  . ~/.bash_command_prompt
-fi
-
+# Disable lint hook
 export NO_AUTOAUTOLINT=0
