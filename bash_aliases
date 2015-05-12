@@ -22,6 +22,7 @@ alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias be="bundle exec"
 alias bake="bundle exec rake"
 alias bails="bundle exec rails"
+alias makegood="bundle install --jobs 10 && migrate"
 alias migrate="bundle exec rake db:migrate db:test:prepare"
 alias remigrate="bundle exec rake db:drop && rake db:create && rake db:migrate && rake db:schema:dump && rake db:test:prepare"
 
