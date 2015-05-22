@@ -9,7 +9,7 @@ alias grep="grep --color"
 alias rm="rm -if"
 alias mkdir="mkdir -p"
 alias cp="cp -R"
-
+alias flip="echo '(╯°□°）╯︵ ┻━┻'"
 # tools
 alias ipconfig="curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+'"
 alias ports="lsof -i -P | grep -i 'listen'"
