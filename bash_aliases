@@ -10,6 +10,7 @@ alias rm="rm -if"
 alias mkdir="mkdir -p"
 alias cp="cp -R"
 alias flip="echo '(╯°□°）╯︵ ┻━┻'"
+
 # tools
 alias ipconfig="curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+'"
 alias ports="lsof -i -P | grep -i 'listen'"
@@ -25,6 +26,10 @@ alias bails="bundle exec rails"
 alias makegood="bundle install --jobs 10 && migrate"
 alias migrate="bundle exec rake db:migrate db:test:prepare"
 alias remigrate="bundle exec rake db:drop && rake db:create && rake db:migrate && rake db:schema:dump && rake db:test:prepare"
+
+# kafka
+alias killkafka="bash ~/dotfiles/scripts/kill-kafka"
+alias clearkafka="bash ~/dotfiles/scripts/clear-kafka"
 
 prompt_git() {
     local s=""
