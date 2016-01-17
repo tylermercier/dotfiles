@@ -1,6 +1,6 @@
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export PATH="/usr/local/bin:$HOME/.rbenv/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/bin:$PATH"
 
 # Ansi Colors in iTerm2
 export CLICOLOR=1
@@ -8,8 +8,16 @@ export CLICOLOR=1
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
 
+# Configure go
+export GOROOT=$HOME/go
+export GOBIN=$GOROOT/bin
+
 # Configure NPM
 export NODE_PATH=/usr/local/lib/node
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export HDFS_USER=tylermercier
+export HADOOP_CONF_DIR=/Users/tylermercier/Documents/github/shopify/starscream/.cache/spark/current/conf/conf.cloudera.yarn
+export PYTHON_ENV=remote_development
 
 # Init rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
