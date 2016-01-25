@@ -16,12 +16,9 @@ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/loca
 ### Sublime packages
 
 ```
-CoffeeScript
 Git
 GitGutter
-GoSublime
-Sass
-Theme - Minimal
+Material Theme
 ```
 
 ### Bash prompt escapes
