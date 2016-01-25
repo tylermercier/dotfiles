@@ -1,12 +1,19 @@
 ## Sublime
 
-`create symlink`
+### Prep
+
+```
+brew install git
+```
+
+### Sublime symlink
 
 ```bash
 ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 ```
 
-`packages`
+### Sublime packages
 
 ```
 CoffeeScript
@@ -17,7 +24,7 @@ Sass
 Theme - Minimal
 ```
 
-Bash prompt escapes
+### Bash prompt escapes
 
 ```bash
 \a         # an ASCII bell character (07)
@@ -55,7 +62,7 @@ Bash prompt escapes
 \]         # end a sequence of non-printing characters
 ```
 
-Bash prompt colors
+### Bash prompt colors
 
 ```bash
 # Regular Colors
