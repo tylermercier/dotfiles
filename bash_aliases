@@ -18,7 +18,7 @@ alias gitclean="git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
 alias gitsquish="git add --all :/ && git commit -m 'wip' && git rebase -i HEAD^^"
 alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-alias knife='BUNDLE_GEMFILE=/Users/tylermercier/Documents/github/shopify/ops/chef/knife-config/Gemfile bundle exec knife'
+alias knife='BUNDLE_GEMFILE=/Users/tyler/Documents/github/shopify/ops/chef/knife-config/Gemfile bundle exec knife'
 
 # rails
 alias be="bundle exec"
