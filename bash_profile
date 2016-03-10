@@ -9,8 +9,8 @@ export CLICOLOR=1
 export TERM=xterm-256color
 
 # Configure go
-export GOROOT=$HOME/go
-export GOBIN=$GOROOT/bin
+export GOPATH=$HOME/Documents/go
+export GO15VENDOREXPERIMENT=1
 
 # Configure NPM
 export NODE_PATH=/usr/local/lib/node
