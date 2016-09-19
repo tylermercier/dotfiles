@@ -10,9 +10,7 @@
   co = checkout
   ci = commit -m
   cp = cherry-pick
-  pr = pull --rebase
-  rc = rebase --continue
-  squash = rebase -i HEAD^^
+  undo = reset --soft HEAD~
   l = log --pretty=oneline --abbrev-commit
   lol = log --graph --decorate --oneline
   lola = log --graph --decorate --oneline --all

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-alias hub="cd ~/Documents/github"
-alias shop="cd ~/Documents/go/src/github.com/Shopify"
+alias shop="cd ~/Documents/github/shopify"
+alias gocode="cd ~/Documents/go/src/github.com/Shopify"
 
 # terminal
 alias ls="ls -G" #for color
@@ -27,7 +27,7 @@ alias knife='BUNDLE_GEMFILE=/Users/tyler/Documents/github/shopify/ops/chef/knife
 alias be="bundle exec"
 alias bake="bundle exec rake"
 alias bails="bundle exec rails"
-alias makegood="bundle install && migrate"
+alias makegood="bin/bootstrap && bundle install && migrate"
 alias binstall="bundle check 2> /dev/null || bundle install --jobs 10"
 alias migrate="bundle exec rake db:migrate db:test:prepare"
 alias remigrate="bundle exec rake db:drop && rake db:create && rake db:migrate && rake db:schema:dump && rake db:test:prepare"
