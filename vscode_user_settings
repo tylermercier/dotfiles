@@ -1,0 +1,29 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // Controls the font family.
+    "editor.fontFamily": "Inconsolata",
+
+    // Controls the font size in pixels.
+    "editor.fontSize": 17,
+
+    // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+    "editor.tabSize": 2,
+
+    // Columns at which to show vertical rulers
+    "editor.rulers": [80, 120],
+
+    // Controls if lines should wrap. The lines will wrap at min(editor.wrappingColumn, viewportWidthInColumns).
+    "editor.wordWrap": true,
+
+    // Controls if the explorer should automatically reveal files when opening them.
+    "explorer.autoReveal": false,
+
+    // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
+    "files.autoSave": "onFocusChange",
+
+    // Controls the delay in ms after which a dirty file is saved automatically. Only applies when "files.autoSave" is set to "afterDelay"
+    "files.autoSaveDelay": 1000,
+
+    // When enabled, will trim trailing whitespace when you save a file.
+    "files.trimTrailingWhitespace": true
+}
