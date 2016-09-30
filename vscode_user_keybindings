@@ -20,9 +20,25 @@
         "when": "editorTextFocus"
     },
     {
+        "key": "ctrl+shift+r",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "editor.action.referenceSearch.trigger",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor"
+    },
+    {
         "key": "ctrl+alt+up",
         "command": "editor.action.insertCursorAbove",
-        "when": "editorTextFocus" },
+        "when": "editorTextFocus"
+    },
     {
         "key": "ctrl+alt+down",
         "command": "editor.action.insertCursorBelow",

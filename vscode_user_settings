@@ -25,5 +25,11 @@
     "files.autoSaveDelay": 1000,
 
     // When enabled, will trim trailing whitespace when you save a file.
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+
+    // Controls where editors open. Select 'left' or 'right' to open editors to the left or right of the current active one. Select 'first' or 'last' to open editors independently from the currently active one.
+    "workbench.editor.openPositioning": "left",
+
+    // Controls if opened editors from Quick Open show as preview. Preview editors are reused until they are kept (e.g. via double click or editing).
+    "workbench.editor.enablePreviewFromQuickOpen": false
 }
