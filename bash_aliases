@@ -11,8 +11,6 @@ alias rm="rm -if"
 alias mkdir="mkdir -p"
 alias cp="cp -R"
 alias flip="echo '(╯°□°）╯︵ ┻━┻'"
-alias weather="curl http://wttr.in"
-alias simpleserver="python -m SimpleHTTPServer"
 
 # tools
 alias ipconfig="curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+'"
@@ -21,20 +19,16 @@ alias gitclean="git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
 alias gitsquish="git add --all :/ && git commit -m 'wip' && git rebase -i HEAD^^"
 alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias weather="curl http://wttr.in"
+alias simpleserver="python -m SimpleHTTPServer"
 alias knife='BUNDLE_GEMFILE=/Users/tyler/Documents/github/shopify/ops/chef/knife-config/Gemfile bundle exec knife'
 
 # rails
 alias be="bundle exec"
 alias bake="bundle exec rake"
 alias bails="bundle exec rails"
-alias makegood="bin/bootstrap && bundle install && migrate"
-alias binstall="bundle check 2> /dev/null || bundle install --jobs 10"
 alias migrate="bundle exec rake db:migrate db:test:prepare"
 alias remigrate="bundle exec rake db:drop && rake db:create && rake db:migrate && rake db:schema:dump && rake db:test:prepare"
-
-# kafka
-alias killkafka="bash ~/dotfiles/scripts/kill-kafka"
-alias clearkafka="bash ~/dotfiles/scripts/clear-kafka"
 
 prompt_git() {
     local s=""
