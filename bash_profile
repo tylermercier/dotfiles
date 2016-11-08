@@ -40,3 +40,5 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 else
   . /usr/local/etc/bash_completion
 fi
+
+[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
