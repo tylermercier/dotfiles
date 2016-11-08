@@ -1,24 +1,8 @@
-## Sublime
-
-### Prep
+### Install
 
 ```
 brew install git
-```
-
-### Sublime symlink
-
-```bash
-ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
-```
-
-### Sublime packages
-
-```
-Git
-GitGutter
-Material Theme
+bash setup.sh
 ```
 
 ### Bash prompt escapes
