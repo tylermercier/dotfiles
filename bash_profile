@@ -2,7 +2,7 @@
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/bin:$HOME/Documents/go/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/Documents/go/bin:$PATH"
 
 # Ansi Colors in iTerm2
 export CLICOLOR=1
@@ -21,9 +21,6 @@ export HDFS_USER=tylermercier
 export HADOOP_CONF_DIR=/Users/tylermercier/Documents/github/shopify/starscream/.cache/spark/current/conf/conf.cloudera.yarn
 export PYTHON_ENV=remote_development
 
-# Init rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # Load aliases
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
@@ -41,4 +38,5 @@ else
   . /usr/local/etc/bash_completion
 fi
 
+# Enable dev
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
