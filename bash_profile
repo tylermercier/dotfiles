@@ -7,6 +7,9 @@ export PATH="/usr/local/bin:/usr/local/sbin:$HOME/Documents/go/bin:$PATH"
 # Ansi Colors in iTerm2
 export CLICOLOR=1
 
+# Default to vim as editor
+export EDITOR=vim
+
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
 
@@ -26,8 +29,8 @@ if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
 
-# Disable lint hook
-export NO_AUTOAUTOLINT=0
+# add ssh profiles
+ssh-add -A
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -40,3 +43,13 @@ fi
 
 # Enable dev
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/tyler/Downloads/google-cloud-sdk/path.bash.inc ]; then
+  source '/Users/tyler/Downloads/google-cloud-sdk/path.bash.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/tyler/Downloads/google-cloud-sdk/completion.bash.inc ]; then
+  source '/Users/tyler/Downloads/google-cloud-sdk/completion.bash.inc'
+fi
