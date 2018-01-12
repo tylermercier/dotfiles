@@ -12,10 +12,10 @@ alias cp="cp -R"
 alias shop="cd ~/Documents/github/shopify"
 alias ops="cd ~/Documents/github/shopify/ops/chef/knife-config"
 alias gocode="cd ~/Documents/go/src/github.com/Shopify"
+alias devnuke="dev up && dev reset-railgun && dev up"
 
 # tools
 alias weather="curl http://wttr.in"
-alias simpleserver="python -m SimpleHTTPServer"
 alias ipconfig="curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+'"
 alias ports="lsof -i -P | grep -i 'listen'"
 alias gitclean="git branch --merged master | grep -v master | xargs -n 1 git branch -d"

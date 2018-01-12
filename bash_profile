@@ -45,11 +45,7 @@ fi
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/tyler/Downloads/google-cloud-sdk/path.bash.inc ]; then
-  source '/Users/tyler/Downloads/google-cloud-sdk/path.bash.inc'
-fi
+if [ -f '/usr/local/lib/google-cloud-sdk/path.bash.inc' ]; then source '/usr/local/lib/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f /Users/tyler/Downloads/google-cloud-sdk/completion.bash.inc ]; then
-  source '/Users/tyler/Downloads/google-cloud-sdk/completion.bash.inc'
-fi
+if [ -f '/usr/local/lib/google-cloud-sdk/completion.bash.inc' ]; then source '/usr/local/lib/google-cloud-sdk/completion.bash.inc'; fi
