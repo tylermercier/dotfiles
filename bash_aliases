@@ -9,9 +9,7 @@ alias mkdir="mkdir -p"
 alias cp="cp -R"
 
 # cd
-alias shop="cd ~/Documents/github/shopify"
-alias ops="cd ~/Documents/github/shopify/ops/chef/knife-config"
-alias gocode="cd ~/Documents/go/src/github.com/Shopify"
+alias shop="cd ~/src/github.com/shopify"
 alias devnuke="dev up && dev reset-railgun && dev up"
 
 # tools
