@@ -11,6 +11,7 @@ alias cp="cp -R"
 # cd
 alias shop="cd ~/src/github.com/shopify"
 alias devnuke="dev up && dev reset-railgun && dev up"
+alias ops="cd ~/src/github.com/Shopify/ops/chef/knife-config"
 
 # tools
 alias weather="curl http://wttr.in"
