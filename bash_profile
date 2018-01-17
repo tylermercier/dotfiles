@@ -2,7 +2,11 @@
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export PATH="/usr/local/bin:/usr/local/sbin:$HOME/Documents/go/bin:$PATH"
+
+# Configure go
+export GOPATH=$HOME
+
+export PATH="/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$PATH"
 
 # Ansi Colors in iTerm2
 export CLICOLOR=1
@@ -12,10 +16,6 @@ export EDITOR=vim
 
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
-
-# Configure go
-export GOPATH=$HOME/Documents/go
-export GO15VENDOREXPERIMENT=1
 
 # Configure NPM
 export NODE_PATH=/usr/local/lib/node
