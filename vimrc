@@ -17,5 +17,6 @@ set background=dark
 set laststatus=2
 set nobackup
 set directory=~/.vim/tmp
+set backupdir=~/.vim/backup
 
 colorscheme desert

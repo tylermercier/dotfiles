@@ -1,0 +1,8 @@
+# User SSH Config
+
+Host *
+    User tyler_mercier
+    IdentityFile ~/.ssh/id_rsa
+    UseKeychain yes
+    AddKeysToAgent yes
+    ForwardAgent yes

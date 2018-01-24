@@ -11,3 +11,4 @@ do
 done
 
 mkdir -p ~/.vim/tmp
+mkdir -p ~/.vim/backup
