@@ -1,5 +1,9 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "go.enableCodeLens": {
+        "references": false,
+        "runtest": false
+    },
     // Controls the font family.
     "editor.fontFamily": "Inconsolata",
 
@@ -12,8 +16,18 @@
     // Columns at which to show vertical rulers
     "editor.rulers": [80, 120],
 
+    // Controls how lines should wrap. Can be:
+    //  - 'off' (disable wrapping),
+    //  - 'on' (viewport wrapping),
+    //  - 'wordWrapColumn' (wrap at `editor.wordWrapColumn`) or
+    //  - 'bounded' (wrap at minimum of viewport and `editor.wordWrapColumn`).
+    "editor.wordWrap": "on",
+
     // Controls if the explorer should automatically reveal files when opening them.
     "explorer.autoReveal": false,
+
+    // Number of editors shown in the Open Editors pane.
+    "explorer.openEditors.visible": 0,
 
     // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
     "files.autoSave": "onFocusChange",
@@ -36,5 +50,8 @@
     "workbench.editor.openPositioning": "left",
 
     // Controls if opened editors from Quick Open show as preview. Preview editors are reused until they are kept (e.g. via double click or editing).
-    "workbench.editor.enablePreviewFromQuickOpen": false
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.zoomLevel": 0
 }
