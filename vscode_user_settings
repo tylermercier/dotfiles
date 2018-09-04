@@ -29,6 +29,11 @@
     // Number of editors shown in the Open Editors pane.
     "explorer.openEditors.visible": 0,
 
+    // Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
+    "files.associations": {
+        "*.yml.erb": "yaml"
+    },
+
     // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
     "files.autoSave": "onFocusChange",
 
@@ -53,5 +58,6 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "vscode-icons",
     "vsicons.dontShowNewVersionMessage": true,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "One Monokai"
 }
