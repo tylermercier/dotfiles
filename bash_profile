@@ -5,6 +5,7 @@ export LC_ALL=en_US.UTF-8
 
 # Configure go
 export GOPATH=$HOME
+export GO111MODULE=on
 
 export PATH="/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$PATH"
 
@@ -16,13 +17,6 @@ export EDITOR=vim
 
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
-
-# Configure NPM
-export NODE_PATH=/usr/local/lib/node
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export HDFS_USER=tylermercier
-export HADOOP_CONF_DIR=/Users/tylermercier/Documents/github/shopify/starscream/.cache/spark/current/conf/conf.cloudera.yarn
-export PYTHON_ENV=remote_development
 
 # Load aliases
 if [ -f ~/.bash_aliases ]; then

@@ -48,3 +48,7 @@
 	required = true
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[diff]
+	algorithm = patience
+[protocol]
+	version = 2

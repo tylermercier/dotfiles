@@ -8,19 +8,20 @@ alias rm="rm -if"
 alias mkdir="mkdir -p"
 alias cp="cp -R"
 
-# cd
+# code
+alias workspace="cd ~/src/github.com"
 alias shop="cd ~/src/github.com/Shopify"
 alias devnuke="dev up && dev reset-railgun && dev up"
-alias ops="cd ~/src/github.com/Shopify/ops/chef/knife-config"
+alias gitclean="git branch --merged master | grep -v master | xargs -n 1 git branch -d"
+alias gitsquish="git add --all :/ && git commit -m 'wip' && git rebase -i HEAD^^"
+
+# kubernetes
+alias contexts="kubectl config view -o jsonpath='{.contexts[*].name}' | tr ' ' '\n'"
 
 # tools
 alias weather="curl http://wttr.in"
 alias ipconfig="curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+'"
 alias ports="lsof -i -P | grep -i 'listen'"
-alias gitclean="git branch --merged master | grep -v master | xargs -n 1 git branch -d"
-alias gitsquish="git add --all :/ && git commit -m 'wip' && git rebase -i HEAD^^"
-
-alias knife="BUNDLE_GEMFILE=/Users/tyler/.chef/Gemfile bundle exec knife"
 
 prompt_git() {
     local s=""
