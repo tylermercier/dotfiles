@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "creating symlinks"
-dotfiles=( bash_aliases bash_profile bashrc gemrc gitconfig gitignore vimrc )
+dotfiles=( bash_aliases bash_profile bashrc bash_prompt gemrc gitconfig gitignore vimrc )
 for file in "${dotfiles[@]}"
 do
   path="$(pwd)/$file"

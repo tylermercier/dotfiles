@@ -18,29 +18,14 @@ export EDITOR=vim
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
 
-# cloudplatform: add Shopify clusters to your local kubernetes config
-export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/tylermercier/.kube/config:/Users/tylermercier/.kube/config.shopify.cloudplatform
-for file in /Users/tylermercier/src/github.com/Shopify/cloudplatform/workflow-utils/*.bash; do source ${file}; done
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi
 
-# Load aliases
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-  . /etc/bash_completion
-else
-  . /usr/local/etc/bash_completion
+if [ -f ~/.bash_prompt ]; then
+  . ~/.bash_prompt
 fi
-
-# Enable dev
-[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/usr/local/lib/google-cloud-sdk/path.bash.inc' ]; then source '/usr/local/lib/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/usr/local/lib/google-cloud-sdk/completion.bash.inc' ]; then source '/usr/local/lib/google-cloud-sdk/completion.bash.inc'; fi
