@@ -46,9 +46,21 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+# hack for go
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [diff]
 	algorithm = patience
 [protocol]
 	version = 2
+[credential]
+	helper = osxkeychain
+[protocol "galaxy"]
+	allow = always
+[url "galaxy::Shopify/"]
+	insteadOf = https://github.com/Shopify/
+	insteadOf = git@github.com:Shopify/
+[url "https://github.com/Shopify/"]
+	pushInsteadOf = https://github.com/Shopify/
+[url "git@github.com:Shopify/"]
+	pushInsteadOf = git@github.com:Shopify/

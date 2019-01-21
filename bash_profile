@@ -18,6 +18,10 @@ export EDITOR=vim
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
 
+# cloudplatform: add Shopify clusters to your local kubernetes config
+export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/tylermercier/.kube/config:/Users/tylermercier/.kube/config.shopify.cloudplatform
+for file in /Users/tylermercier/src/github.com/Shopify/cloudplatform/workflow-utils/*.bash; do source ${file}; done
+
 # Load aliases
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
