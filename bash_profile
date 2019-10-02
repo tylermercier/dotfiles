@@ -29,3 +29,4 @@ fi
 if [ -f ~/.bash_prompt ]; then
   . ~/.bash_prompt
 fi
+if [ -e /Users/tylermercier/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/tylermercier/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

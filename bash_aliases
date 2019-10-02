@@ -14,6 +14,7 @@ alias shop="cd ~/src/github.com/Shopify"
 alias devnuke="dev up && dev reset-railgun && dev up"
 alias gitclean="git branch --merged master | grep -v master | xargs -n 1 git branch -d"
 alias gitsquish="git add --all :/ && git commit -m 'wip' && git rebase -i HEAD^^"
+alias gitup="git pull origin master & git pull"
 
 # kubernetes
 alias contexts="kubectl config view -o jsonpath='{.contexts[*].name}' | tr ' ' '\n'"
@@ -22,3 +23,4 @@ alias contexts="kubectl config view -o jsonpath='{.contexts[*].name}' | tr ' ' '
 alias weather="curl http://wttr.in"
 alias ipconfig="curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+'"
 alias ports="lsof -i -P | grep -i 'listen'"
+alias index_spotlight="sudo mdutil -i on /Volumes/Macintosh\ HD"

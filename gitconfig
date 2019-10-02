@@ -3,6 +3,7 @@
   email = tylermercier@gmail.com
 [core]
   editor = vim
+	commitGraph = true
 [alias]
   br = branch
   st = status -sb
@@ -55,12 +56,5 @@
 	version = 2
 [credential]
 	helper = osxkeychain
-[protocol "galaxy"]
-	allow = always
-[url "galaxy::Shopify/"]
-	insteadOf = https://github.com/Shopify/
-	insteadOf = git@github.com:Shopify/
-[url "https://github.com/Shopify/"]
-	pushInsteadOf = https://github.com/Shopify/
-[url "git@github.com:Shopify/"]
-	pushInsteadOf = git@github.com:Shopify/
+[gc]
+	writeCommitGraph = true
