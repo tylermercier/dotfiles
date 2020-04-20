@@ -3,10 +3,6 @@
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-# Configure go
-export GOPATH=$HOME
-export GO111MODULE=on
-
 export PATH="/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$PATH"
 
 # Ansi Colors in iTerm2
