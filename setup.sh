@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "creating symlinks"
-dotfiles=( bash_aliases bash_profile bashrc bash_prompt gemrc gitconfig gitignore vimrc )
+dotfiles=( aliases gemrc gitconfig gitignore vimrc )
 for file in "${dotfiles[@]}"
 do
   path="$(pwd)/$file"
@@ -12,3 +12,6 @@ done
 
 mkdir -p ~/.vim/tmp
 mkdir -p ~/.vim/backup
+
+echo 'add the following to profile'
+echo 'source ~/.aliases'

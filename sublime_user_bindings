@@ -1,7 +1,0 @@
-[
-  { "keys": ["ctrl+shift+v"], "command": "paste" },
-  { "keys": ["ctrl+v"], "command": "paste_and_indent" },
-  { "keys": ["ctrl+shift+p"], "command": "reindent" , "args": {"single_line": false}},
-  { "keys": ["alt+."], "command": "reveal_in_side_bar" },
-  { "keys": ["f5"], "command": "refresh_folder_list" }
-]

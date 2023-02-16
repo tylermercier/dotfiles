@@ -9,12 +9,10 @@ alias mkdir="mkdir -p"
 alias cp="cp -R"
 
 # code
-alias workspace="cd ~/src/github.com"
-alias shop="cd ~/src/github.com/Shopify"
-alias devnuke="dev up && dev reset-railgun && dev up"
-alias gitclean="git branch --merged master | grep -v master | xargs -n 1 git branch -d"
+alias repo="cd ~/Documents/code"
+alias gitclean="git branch --merged main | grep -v main | xargs -n 1 git branch -d"
 alias gitsquish="git add --all :/ && git commit -m 'wip' && git rebase -i HEAD^^"
-alias gitup="git pull origin master & git pull"
+alias gitup="git pull origin main & git pull"
 
 # kubernetes
 alias contexts="kubectl config view -o jsonpath='{.contexts[*].name}' | tr ' ' '\n'"
